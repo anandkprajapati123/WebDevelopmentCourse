@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create element
+        let element=document.createElement("h1");
+        // get element
+        let bodyTag=document.getElementsByTagName("body");
+        // add element
+        bodyTag[0].append(element);
+        element.innerHTML="HELLO JAVASCRIPT";
+
+        // create image
+        let image=document.createElement("img");
+        bodyTag[0].append(image);
+        image.setAttribute("title","img created");
+        image.setAttribute("src","img.png");
+        
+    </script>
+</body>
+</html>
