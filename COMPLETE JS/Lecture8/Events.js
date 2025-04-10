@@ -1,18 +1,18 @@
 let btn1=document.querySelector("#btn1");
-// btn1.onclick=(e)=>{
-//     console.log("btn1 was clicked!");
-//     let a=22;
-//     a++;
-//     console.log(a);
-//     console.log(e);
-// }
+btn1.onclick=(e)=>{
+    console.log("btn1 was clicked!");
+    let a=22;
+    a++;
+    console.log(a);
+    console.log(e);
+}
 
-// btn1.onclick=(event)=>{
-//     console.log(event);
-//     console.log(event.type);
-//     console.log(event.target);
-//     console.log(event.clientX, event.clientY);
-// }
+btn1.onclick=(event)=>{
+    console.log(event);
+    console.log(event.type);
+    console.log(event.target);
+    console.log(event.clientX, event.clientY);
+}
 
 btn1.addEventListener("click",(event)=>{
     console.log("bt1 was clicked!")
@@ -41,14 +41,14 @@ btn1.addEventListener("click",(event)=>{
 
 btn1.removeEventListener("click",handler3);
 
-// let div=document.querySelector("div");
-// div.onmouseover=()=>{
-//     console.log("you are inside div");
-// }
+let div=document.querySelector("div");
+div.onmouseover=()=>{
+    console.log("you are inside div");
+}
 
-// div.onmouseover=(event)=>{
-//     console.log(event);
-//     console.log(event.type);
-//     console.log(event.target);
-//     console.log(event.clientX, event.clientY);
-// }
+div.onmouseover=(event)=>{
+    console.log(event);
+    console.log(event.type);
+    console.log(event.target);
+    console.log(event.clientX, event.clientY);
+}
