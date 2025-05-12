@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .progress{
+            background-color: red;
+            width: 3px;
+            height: 2px;
+            animation: load 1s ease-in-out 1;
+            /* transition: width 1s ease-in-out, height 1s ease-in-out; */
+        }
+        /* .progress:hover{
+            width: 100vw;
+            height: 2px;
+        } */
+        header{
+            height: 120px;
+            background-color: black;
+        }
+        main{
+            height: 700px;
+            background-color: blue;
+        }
+        @keyframes load {
+            0%{
+                width: 0;
+            }
+            60%{
+                width: 40vw;
+                background-color: blue;
+            }
+            100%{
+                width: 100vw;
+                background-color: chartreuse;
+            }
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes slide1 {
+            0%{
+                transform: translate(-8vw);
+            }
+            100%{
+                transform: translate(85vw);
+            }
+        }
+        @keyframes slide2 {
+            0%{
+                transform: translate(8vw);
+            }
+            100%{
+                transform: translate(92vw);
+            }
+        }
+        img{
+            animation: rotate 1s ease-in-out 1;
+        }
+         img{
+            /* display: block; */
+            margin: auto;
+         }
+        .slider{
+            background-color: white;
+            height: 530px;
+            width: 100vw;
+            overflow: hidden;
+            /* display: flex; */
+            /* justify-content: center; */
+        } 
+         .img1{
+            /* transform: translate(85vw); */
+            /* animation: slide1 1s 2s forwards; */
+        }
+         .img2{
+            /* transform: translate(92vw); */
+            /* animation: slide2 1s 2s forwards; */
+        }
+         .img3{
+            /* transform: translate(-8vw); */
+        }
+    </style>
+</head>
+<body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+        <img src="dragon.png" width="120px" alt="">
+    <div class="slider"></div>
+    </main>
+</body>
+</html>

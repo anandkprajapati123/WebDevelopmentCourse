@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Template literals allow for multi-line strings and string interpolation
+        // const name = "Anand";
+        // const age = 20;;
+        // console.log(`Hello, my name is ${name} and I am ${age} years old.`);
+
+        // // Multi-line string using template literals
+        // const multiLineString = `This is a string
+        // that spans multiple lines.`;
+        // console.log(multiLineString);
+
+        // var a = "10";
+        // var b = 20;
+        // console.log(`${a}+${b}`);
+        // console.log(typeof `${a}+${b}`);
+        // console.log(a*b);
+        // console.log(typeof(a*b));
+
+        function greet(string,name) {
+            return `${string[0]} ${name.toUpperCase()}$(string[1])`;
+        }
+        const name1 = "Anand";
+        console.log(greet`Hello ${name1}, how are you?`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position | HTML CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            width: 100%;
+            height: auto;
+            background-color: brown;
+            position: fixed; 
+            z-index: 1;
+            text-align: center;
+            align-content: center;
+        }
+        main{
+            width: 1200px;
+            height: 800px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            z-index: 2;
+            /* position: relative; */
+            top: 120px;
+        }
+        .b1{
+            width: 300px;
+            height: 250px;
+            background-color: aqua;
+            position: relative;
+            /* position: sticky; */
+            top: 20px;
+            left: 350px;
+        }
+        .b2{
+            width: 300px;
+            height: 250px;
+            background-color: brown;
+            /* position: absolute; */
+            top: 20px;
+            left: 350px;
+        }
+    </style>
+</head>
+<body>
+    <nav><h2>Navbar</h2></nav>
+    <main>
+        <div class="b1"><h2>B1</h2></div>
+        <div class="b2"><h2>B2</h2></div>
+    </main>
+    <section>
+        <div><h2>Sticky Element</h2></div>
+    </section>
+</body>
+</html>

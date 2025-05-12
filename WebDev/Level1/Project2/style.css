@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 25px 45px;
+    position: fixed;
+    width: 100%;
+}
+#nav h3{
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+    margin-left: 5px;
+    border-radius: 50px;
+    font-size: 23px;
+}
+#intro{
+    height: 45%;
+    width: 100%;
+    padding: 45px 55px;
+}
+#intro h1{
+    font-size: 130px;
+    line-height: 120px;
+    letter-spacing: -2px;
+}
+#place{
+    display:flex;
+    margin-top: 33px;
+    align-items: center;
+    justify-content: space-between;
+}
+#place h2, #place h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+#hero-image{
+    height: 85%;
+    width: 100%;
+    background-image: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-2000.webp);
+    background-size: cover;
+}
+#about{
+    height: 45%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+#about h2{
+    width: 65%;
+    font-size: 83px;
+    line-height: 80px;
+    letter-spacing: -3px;
+    padding: 35px;
+}
+#about-me{
+    width: 30%;
+    height: 100%;
+    padding: 0 60px;
+    border-left: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about-me h3{
+    font-size: 33px;
+    font-weight: 500;
+}
+#icons i{
+    background-color: black;color: white;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 25px;
+    border-radius: 50px;
+}
+#work{
+    height: 55%;
+    width: 100%;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+#work1{
+    height: 100%;
+    width: 35%;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+#work1 h3,i{
+    font-size: 30px;
+}
+#work2{
+    height: 100%;
+    width: 65%;
+    padding: 0px 30px;
+}
+.work2-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+.work2-part:nth-child(1){
+    padding-top: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.work2-part .text{
+    width: 50%;
+    height: 100%;
+}
+.work2-part .text:nth-child(1){
+    border-right: 2px solid black;
+}
+.work2-part .text:nth-child(2){
+    padding: 40px;
+}
+.work2-part .text h4{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.work2-part .text p{
+    color: #3f3e3e;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}

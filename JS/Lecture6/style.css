@@ -1,0 +1,23 @@
+h1,.paragraph{
+    color: rgb(81, 81, 77);
+    background-color: yellowgreen;
+    font-size: 50px;
+    text-decoration: line-through;
+}
+#btn{
+    background-color: blue;
+    font-size: 50px;
+    border-radius: 25px;
+}
+body{
+    background-color: palevioletred;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(119, 235, 119);
+}

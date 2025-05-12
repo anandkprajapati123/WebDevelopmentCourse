@@ -1,0 +1,88 @@
+<<<<<<< HEAD
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(203, 203, 242);
+    height: 120vh;
+    border: 5px solid blueviolet;
+}
+.text{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    margin-top: 30px;
+}
+.biography h2{
+    margin-top: 30px;
+}
+
+.biography ul{
+    margin: 10px 70px;
+}
+.biography li{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+footer{
+    margin: 50px 0;
+}
+footer p{
+    text-align: end;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(203, 203, 242);
+    height: 120vh;
+    border: 5px solid blueviolet;
+}
+.text{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.home{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+h1{
+    font-size: 50px;
+}
+p{
+    margin-top: 30px;
+}
+.biography h2{
+    margin-top: 30px;
+}
+
+.biography ul{
+    margin: 10px 70px;
+}
+.biography li{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+footer{
+    margin: 50px 0;
+}
+footer p{
+    text-align: end;
+>>>>>>> 51a78a7f71602c9a2b5e6e6707ddc28dcea13fda
+}

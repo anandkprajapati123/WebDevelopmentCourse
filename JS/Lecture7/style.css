@@ -1,0 +1,15 @@
+#box{
+    height: 200px;
+    width: 100px;
+    background-color: rgb(18, 43, 227);
+    color: white;
+    border: 2px solid green;
+}
+
+.content{
+    color: red;
+}
+.newClass{
+    background-color: green;
+    color: black;
+}

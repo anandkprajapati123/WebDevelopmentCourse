@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            height: 100vh;
+            width:100vw;
+            background-color: aqua;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            color: white;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* animation-name: WidthAnimate;
+            animation-duration: 3s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in; */
+            animation: WidthAnimate 4s 0.5s infinite alternate-reverse ease-in-out;
+        }
+        img{
+            animation: WidthAnimate 4s 0.5s infinite alternate-reverse ease-in-out;
+        }
+        /* @keyframes WidthAnimate {
+            from{
+                width: 30px;
+                height: 30px;
+            }
+            to{
+                width: 200px;
+                height: 200px;
+            }
+        } */
+        @keyframes WidthAnimate {
+            0%{
+                width: 30px;
+                height: 30px;
+            }
+            20%{
+                width: 120px;
+                height: 120px;
+            }
+            100%{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box"></div>
+      <img src="dragon.png" alt="">
+    </div>
+</body>
+</html>

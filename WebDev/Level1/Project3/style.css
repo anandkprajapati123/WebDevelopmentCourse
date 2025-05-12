@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+}
+#nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+}
+#nav-part1,#nav-part2{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+#nav h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+#content{
+    margin-top: 60px;
+    padding: 35px 60px;
+}
+#content h3{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#content h1{
+    font-size: 140px;
+    line-height: 150px;
+    letter-spacing: -10px;
+    word-spacing: 10px;
+    font-weight:530;
+}
+#case{
+    padding: 35px 55px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#case h4{
+    font-size: 25px;
+    font-weight: 530;
+}
+#case h5{
+    font-size: 25px;
+    font-weight: 530;
+}
+#right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+#line{
+    height: 2px;
+    width: 150px;
+    background-color: black;
+}
+#projects{
+    margin-top: 100px;
+    padding: 35px 55px;
+    gap: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem{
+    width: 50%;
+}
+.elem img{
+    width: 450px;
+    height: 450px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.bottom i{
+    font-size: 30px;
+    padding: 15px 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.bottom i:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.bottom h2{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.bottom h4{
+    font-size: 20px;
+    color: #808080;
+    font-weight: 500;
+}

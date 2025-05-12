@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1#demo, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo">Hello JS</h1>
+    <hr>
+    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem facilis perferendis eum error quaerat tenetur blanditiis nobis officiis optio sint? Facere, ex blanditiis.</p>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deleniti commodi numquam consectetur quod dolorum doloremque, iusto unde quia esse nobis explicabo nostrum.</p>
+    <hr>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <hr>
+    <img src="" alt="Logo" id="img_dtl" title="ABES LOGO">
+
+    <h1 id="demo" onclick="clickEvent()">Hello JS</h1>
+    <button id="btn" onclick="mouseEvent()" >Click me!</button>
+    <input type="text" placeholder="Enter Your Name!" id="btn" onmouseover="mouseEvent()">
+
+    <script>
+        let element=document.getElementById("demo");
+        element.innerHTML="Hello World";
+        let element2=document.getElementsByClassName("para");
+        element2[0].style.color="red";
+        let element3=document.getElementsByTagName("h1");
+        element3[0].style.backgroundColor="#999";
+        let element4=document.querySelector("ul li:nth-child(1)");
+        element4.style.textTransform="uppercase";
+        let elementAttr=document.getElementById("img");
+        let elementAttrDtl=elementAttr.getAttribute("title");
+        document.getElementById("img_dtl").innerHTML=attributeDtl;
+        elementAttr.setAttribute("alt","ABES GZB");
+
+        function clickEvent(){
+            let element=document.getElementById("demo");
+            element.style.color="red";
+        }
+
+        let inputElement=document.getElementById("btn");
+        inputElement.addEventlistener("mouseover",mouseEvent);
+        inputElement.addEventlistener("mouseout",mouseEvent2);
+
+        function mouseEvent(){
+            let btn=document.getElementById("btn");
+            btn.style.background="green";
+        }
+        function mouseEvent2(){
+            let bttn=document.getElementById("btn");
+            bttn.style.background="red";
+        }
+    </script>
+</body>
+</html>

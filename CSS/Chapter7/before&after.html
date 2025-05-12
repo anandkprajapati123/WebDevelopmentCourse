@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white; 
+        }
+        section{
+            height: 350px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            justify-content: center;
+            margin: 3px 250px;
+            border: 3px solid gold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .navigation{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        h1{
+            font-size: 4rem;
+        }
+        h3{
+            text-align: center;
+        }
+        section::before{
+            content: "I am Anand";
+        }
+        section::after{
+            content: "I am Anand";
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome new coading world</h1>
+            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, perferendis sapiente inventore nulla, sunt eos laudantium soluta eaque iure quibusdam temporary.<h3>
+        </section>
+        <hr>
+</body>
+</html>

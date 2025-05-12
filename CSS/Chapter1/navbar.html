@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar | CSS</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        ul {
+            list-style: none;
+            display: flex;
+        }
+        ul li {
+            margin: 0 10px;
+            border-right: 1px solid #999;
+            padding-right: 35px;
+        }
+        ul li:nth-child(5){ border-right: 0; padding-right: 0;}
+        ul li a {
+            text-decoration: none;
+            color: black; 
+            background-color: antiquewhite;
+            padding:5px 10px; 
+            border-radius: 10px; 
+            box-shadow: 1px 2px 2px #999;
+        }
+        ul li a:hover {
+            color: red;
+            cursor: pointer;
+            background-color: blueviolet;
+        }
+        ul li a:active {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Course</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+</body>
+</html>

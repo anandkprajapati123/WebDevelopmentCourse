@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors | CSS</title>
+    <style>
+        /* universal selector */
+        *{ color: red;}
+
+        /* simple selectors element, class, id */
+     body{ margin: 0px; padding: 0px; box-sizing: border-box;}
+     div{ background-color: blueviolet;}
+    p{
+      color: bisque;
+    }
+    .para{
+         color:white
+    } 
+    #txt{
+         font-size: larger;
+    }
+    /* combinators- used with simple selector */
+    div p {color: aqua;} 
+    div>p{ color: aquamarine;}
+    div+p{ color: blue;}
+    div~p{ color: brown;}
+
+    /* Pseudo Classes SELECTORS */
+    a:hover{ color:#f04;}
+    a:visited{ color: rgb(238, 100, 8);}
+    a:active{ color: bisque;}
+
+      /* Pseudo Elements SELECTORS */
+      div{ opacity:.3;}
+      p::first-letter{ color: red; font-size: larger;}
+      p::after{ content: 'Add more'; color: blue;}
+      p::first-line{ text-decoration: underline;}
+    </style>
+</head>
+<body>
+     <div>
+        <a href="">click here to see the result!</a>
+        <a href="">click</a>
+        <h2>direct child</h2>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi sit magni ipsum atque numquam beatae temporibus quibusdam aliquam unde itaque amet cupiditate laboriosam iste, obcaecati hic dolor voluptatem sint repellat.</p>
+        <p id="txt">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, odit distinctio quo labore quaerat, odio minima commodi quasi accusamus maxime veritatis deleniti doloremque ab a impedit ad corporis sunt? Officia.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti nulla velit mollitia ut magni quos dignissimos, rem numquam fuga ab laudantium praesentium, fugit sapiente vitae qui consequatur repellat! Consequatur!</p>
+        <main>
+            <h2>indirect child</h2>
+            <p class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium accusamus illum placeat suscipit minima quas, maxime, voluptate dicta doloremque sed molestias nisi eum! Quod deserunt laudantium dicta cupiditate optio quae.
+            </p>
+        </main>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere repellat porro eligendi alias delectus debitis veniam amet harum repudiandae sint cumque libero nisi in maxime, quos dolores perspiciatis quisquam quis.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia omnis, quam perspiciatis explicabo, debitis aliquam magnam iste soluta, temporibus nesciunt ea repudiandae? Est, maxime! Quam corrupti non quaerat voluptas sint.</p>
+    <nav>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, laborum quibusdam quaerat at maiores nobis ratione enim quo exercitationem veniam velit incidunt id saepe. Eligendi cum natus harum aut eaque.</p>
+    </nav> 
+</body>
+</html>

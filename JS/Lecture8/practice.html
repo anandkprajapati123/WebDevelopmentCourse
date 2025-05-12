@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="mode"><b>Change Screenmode</b></button>
+    <h1>This is paragraph</h1>
+
+    <script>
+        let modebtn=document.querySelector("#mode");
+        let mode="light";
+        modebtn.addEventListener("click",()=>{
+            if(mode=="light"){
+                mode="dark";
+                // document.querySelector("body").style.backgroundColor="black";
+                document.querySelector("body").classList.add("dark");
+                document.querySelector("body").classList.remove("light");
+            }
+            else{
+                mode="light";
+                // document.querySelector("body").style.backgroundColor="white";
+                document.querySelector("body").classList.add("light");
+                document.querySelector("body").classList.remove("dark");
+            }
+            console.log(mode);
+            console.log("you are trying to change the screenmode!");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main{
+            width: 1200px;
+            height: 1200px;
+            background-color: antiquewhite;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 120px 200px 120px 80px;
+        }
+        #logo,header,article,footer{
+            background-color: #ccc;
+            margin-top: 5px;
+            text-align: center;
+            align-content: center;
+        }
+        #logo{
+            margin-top: 0;
+        }
+        #box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 320px;
+            gap: 5px;
+            margin-top: 5px;
+        }
+        .boxes{
+            background-color: #999;
+            text-align: center;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>Logo</h2></div>
+        <header><h2>Header</h2></header>
+        <article><h2>Text Area</h2></article>
+
+        <div id="box">
+            <div class="boxes"><h2>Box1</h2></div>
+            <div class="boxes"><h2>Box2</h2></div>
+            <div class="boxes"><h2>Box3</h2></div>
+        </div>
+
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>

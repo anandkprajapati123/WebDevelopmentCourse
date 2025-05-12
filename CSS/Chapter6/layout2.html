@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            align-content: center;
+        }
+        main{
+            width: 1200px;
+            height: 1000px;
+            background-color: aqua;
+            margin: 0 auto;
+        }
+        #logo{
+            width: 100%;
+            height: 100px;
+            background-color: #999;
+        }
+        nav{
+            width: 100%;
+            height: 80px;
+            background-color: #999;
+            margin: 5px 0;
+        }
+        header{
+            width: 100%;
+            height: 250px;
+            background-color: #999;
+        }
+        #container{
+            margin: 5px 0;
+            background-color: aquamarine;
+            display: flex;
+            /* flex-direction: row; */
+            gap: 5px;
+        }
+        .box{
+            width: 300px;
+            height: 460px;
+            flex-grow: 1;
+            background-color: #999;
+            /* visibility: hidden; */
+        }
+        footer{
+            width: 100%;
+            height: 100px;
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="logo"><h2>Logo</h2></div>
+        <nav><h2>Navigation</h2></nav>
+        <header><h2>Header</h2></header>
+        <div id="container">
+            <div class="box"><h2>SideBar</h2></div>
+            <div class="box"><h2>Body</h2></div>
+            <div class="box"><h2>Area</h2></div>
+        </div>
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>
