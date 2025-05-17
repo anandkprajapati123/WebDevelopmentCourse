@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub User Fetch</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 10px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            color: #c9d1d9;
+        }
+        button:hover {
+            cursor: pointer;
+            background: #238636;
+        }
+        pre {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 GitHub User Finder</h1>
+
+    <input type="text" id="search_id" placeholder="Enter GitHub username" />
+    <button onclick="getdata()">Get User</button>
+
+    <pre id="display">User data will appear here...</pre>
+
+    <!-- link js file -->
+    <script src="promises.js"></script> 
+</body>
+</html>

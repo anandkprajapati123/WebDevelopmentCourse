@@ -2,7 +2,6 @@ const url = "https://api.thecatapi.com/v1/images/search";
 const option={}
 const pr = fetch(url,option);
 console.log(pr);
-
 let successcB = (res)=>{
     console.log("Data fetched succesfully",res);
 }

@@ -1,264 +1,61 @@
-<<<<<<< HEAD
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+// Data: List of departments with transparency status
+const departments = [
+  { name: "Education Department", status: "Public" },
+  { name: "Health & Welfare", status: "Partial" },
+  { name: "Transportation", status: "Hidden" },
+  { name: "Public Works", status: "Public" },
+  { name: "Environmental Agency", status: "Partial" },
+  { name: "Housing & Urban Development", status: "Public" },
+  { name: "Parks & Recreation", status: "Public" },
+  { name: "Finance Department", status: "Public" },
+  { name: "Emergency Services", status: "Partial" },
+  { name: "Cultural Affairs", status: "Hidden" }
+];
 
+// Function to create and display department cards
+function displayDepartments(filterText = "") {
+  const container = document.getElementById('cardsContainer');
+  container.innerHTML = ""; // Clear previous cards
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vh;
-    background: #000;
-}
-Header{
-    /* background: url("bg.png"); */
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    animation: animateBg 5s linear infinite;
-}
-@keyframes animate {
-    100%{
-        filter: hue-rotate(360deg);
+  const filtered = departments.filter(dept =>
+    dept.name.toLowerCase().includes(filterText.toLowerCase())
+  );
+
+  filtered.forEach(dept => {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    const nameEl = document.createElement('div');
+    nameEl.className = 'department-name';
+    nameEl.textContent = dept.name;
+
+    const statusEl = document.createElement('div');
+    statusEl.className = 'status';
+
+    // Assign class based on status for color coding
+    if (dept.status === "Public") {
+      statusEl.classList.add('status-public');
+      statusEl.textContent = "Publicly Transparent";
+    } else if (dept.status === "Partial") {
+      statusEl.classList.add('status-partial');
+      statusEl.textContent = "Partially Transparent";
+    } else if (dept.status === "Hidden") {
+      statusEl.classList.add('status-hidden');
+      statusEl.textContent = "Hidden";
     }
-}
-.login{
-    position: relative;
-    width: 400px;
-    height: 450px;
-    background: rgb(15, 61, 116);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgba(255,255,255,.5);
-    backdrop-filter: blur(10px);
-}
-h2{
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-}
-.input{
-    width: 320px;
-    margin: 30px 0;
-    position: relative;
-    border-bottom: 2px solid #fff;
-}
-.input label{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    transform: translate(-50%);
-    font-size: 1em;
-    pointer-events: none;
-}
-.input input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #fff;
-    padding: 0 28px 0 5px;
-}
-.input input:focus ~ label,
-.input input:valid ~ label{
-    top: 0;
-    font-size: 0.8em;
-}
-input .icon{
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 55px;
-    transform: translate(-50%);
-    cursor: pointer;
-}
-.remember{
-    margin: -15px 0 15px;
-    font-size: .9em;
-    display: flex;
-    justify-content: center;
-}
-.remember label input{
-    margin-right: 5px;
-}
-.remember a{
-    color: #fff;
-    text-decoration: none;
-}
-.remember a:hover{
-    text-decoration: underline;
-}
-button{
-    width: 100%;
-    height: 50px;
-    background: #fff;
-    border: none;
-    outline: none;
-    font-size: 1.2em;
-    color: #000;
-    cursor: pointer;
-    border-radius: 25px;
-    margin: 10px 0;
-}
-.register{
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    margin: 20px 0 10px;
-}
-.register p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-.register p a:hover{
-    text-decoration: underline;
-=======
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 
+    card.appendChild(nameEl);
+    card.appendChild(statusEl);
+    container.appendChild(card);
+  });
+}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100vh;
-    background: #000;
-}
-Header{
-    /* background: url("bg.png"); */
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    animation: animateBg 5s linear infinite;
-}
-@keyframes animate {
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
-.login{
-    position: relative;
-    width: 400px;
-    height: 450px;
-    background: rgb(15, 61, 116);
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid rgba(255,255,255,.5);
-    backdrop-filter: blur(10px);
-}
-h2{
-    font-size: 2em;
-    color: #fff;
-    text-align: center;
-}
-.input{
-    width: 320px;
-    margin: 30px 0;
-    position: relative;
-    border-bottom: 2px solid #fff;
-}
-.input label{
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    transform: translate(-50%);
-    font-size: 1em;
-    pointer-events: none;
-}
-.input input{
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    color: #fff;
-    padding: 0 28px 0 5px;
-}
-.input input:focus ~ label,
-.input input:valid ~ label{
-    top: 0;
-    font-size: 0.8em;
-}
-input .icon{
-    position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    line-height: 55px;
-    transform: translate(-50%);
-    cursor: pointer;
-}
-.remember{
-    margin: -15px 0 15px;
-    font-size: .9em;
-    display: flex;
-    justify-content: center;
-}
-.remember label input{
-    margin-right: 5px;
-}
-.remember a{
-    color: #fff;
-    text-decoration: none;
-}
-.remember a:hover{
-    text-decoration: underline;
-}
-button{
-    width: 100%;
-    height: 50px;
-    background: #fff;
-    border: none;
-    outline: none;
-    font-size: 1.2em;
-    color: #000;
-    cursor: pointer;
-    border-radius: 25px;
-    margin: 10px 0;
-}
-.register{
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    margin: 20px 0 10px;
-}
-.register p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-.register p a:hover{
-    text-decoration: underline;
->>>>>>> 51a78a7f71602c9a2b5e6e6707ddc28dcea13fda
-}
+// Initialize display
+window.onload = () => {
+  displayDepartments();
+
+  // Add event listener for search input
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    displayDepartments(e.target.value);
+  });
+};
