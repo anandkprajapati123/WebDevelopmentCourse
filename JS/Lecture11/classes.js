@@ -22,8 +22,6 @@ let fortuner=new Car("Fortuner",15);
 console.log(fortuner);
 // fortuner.setBrand("Fortuner");
 
-
-
 class Person{
     constructor(name){
         // console.log("Enter parent constructor")

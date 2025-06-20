@@ -11,7 +11,7 @@ html, body{
 #main{
     height:100%;
     width:100%;
-    background-color: white;
+    background-color: lightgrey;
 }
 #nav{
     height:100px;
@@ -73,6 +73,7 @@ img{
     transform: translate(-50%,-50%);
 }
 #img1{
+    /* rotate: -10deg; */
     transform: translate(-50%,-50%) rotate(-30deg);
 }
 #img2{

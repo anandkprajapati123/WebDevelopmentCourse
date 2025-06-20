@@ -35,12 +35,12 @@ html, body{
 }
 #intro h1{
     font-size: 130px;
-    line-height: 120px;
+    line-height: 122px;
     letter-spacing: -2px;
 }
 #place{
     display:flex;
-    margin-top: 33px;
+    margin-top: 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -83,7 +83,8 @@ html, body{
     font-weight: 500;
 }
 #icons i{
-    background-color: black;color: white;
+    background-color: black;
+    color: white;
     padding: 10px;
     margin-right: 10px;
     font-size: 25px;
@@ -94,8 +95,8 @@ html, body{
     width: 100%;
     border-top: 2px solid black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    /* justify-content: space-between; */
     padding: 30px 50px;
 }
 #work1{
@@ -108,6 +109,7 @@ html, body{
 }
 #work1 h3,i{
     font-size: 30px;
+    font-weight: 500;
 }
 #work2{
     height: 100%;
@@ -122,7 +124,7 @@ html, body{
 }
 .work2-part:nth-child(1){
     padding-top: 0;
-    border-top: 2px solid black;
+    /* border-top: 2px solid black; */
     border-bottom: 2px solid black;
 }
 .work2-part .text{
