@@ -1,16 +1,16 @@
-function sum(a,b){
-    console.log(a+b);
-}
-function claculator(a,b,sumCallback){
-    sumCallback(a,b);
-}
-claculator(2,3,sum);
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// function claculator(a,b,sumCallback){
+//     sumCallback(a,b);
+// }
+// claculator(2,3,sum);
 
 //  const getPromise=()=>{
 //    return new Promise((resolve, reject) => {
 //      console.log("I am a promise");
 //      resolve("success");
-//      reject("some error occured!");
+//     //  reject("some error occured!");
 //    });
 //  }
 
@@ -33,7 +33,7 @@ claculator(2,3,sum);
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       console.log("data", dataId);
-//       resolve("success");
+//       // resolve("success");
 //       if(getNextData){
 //         getNextData();
 //       } 
@@ -91,6 +91,7 @@ claculator(2,3,sum);
 // }
 
 // IIFE(Immediately invoked function expression) method
+
 // (async function () {
 //   console.log("getting data1...");
 //   await getData(1);
@@ -99,7 +100,6 @@ claculator(2,3,sum);
 //   console.log("getting data3...");
 //   await getData(3);
 // })();
-
 
 
 
@@ -127,7 +127,6 @@ claculator(2,3,sum);
 // }).then((res)=>{
 //   console.log(res);
 // });
-
 
 
 
