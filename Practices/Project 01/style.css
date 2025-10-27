@@ -98,8 +98,13 @@ nav ul li a:hover {
     text-align: center;margin: 8px;
 }
 footer {
-    background-color: var(--main-bg-color);color: white;
-    /* border: 2px solid blueviolet; */height: 12vh;
-    justify-content: center;align-items: center;display: flex;
-    /* font-size: 40px; */font-family: "Rubik Wet Paint", serif;
+    background-color: var(--main-bg-color);
+    color: white;
+    border: 2px solid blueviolet;
+    height: 12vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

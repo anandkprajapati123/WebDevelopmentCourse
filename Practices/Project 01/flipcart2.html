@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipkart Style Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    .main{
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/009/196/242/small_2x/cloud-abstract-background-in-blue-and-yellow-gradient-color-vector.jpg') no-repeat center center/cover;
+      height: 400px;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.4);
+    }
+    .logo {
+      font-size: 26px;
+      font-style: italic;
+      font-weight: bold;
+      color: yellow;
+    }
+    .menu {
+      display: flex;
+      gap: 25px;
+    }
+    .menu a {
+      padding: 20px 30px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      color: black;
+    }
+    .menu a:hover {
+      color: blueviolet;
+      cursor: pointer;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 350px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 50px;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    .search-box {
+      margin-top: 20px;
+      display: flex;
+      width: 50%;
+      max-width: 600px;
+      border-radius: 5px;
+    }
+    .search-box input {
+      border-radius: 50px;
+      flex: 1;
+      padding: 15px;
+      font-size: 16px;
+    }
+    .search-box button {
+      background: #ff3366;
+      border: none;
+      border-radius: 40px;
+      padding: 15px 25px;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    .search-box button:hover {
+      background: #ff0055;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main">
+    <div class="navbar">
+      <div class="logo">Flipkart</div>
+      <div class="menu">
+        <a href="#">Login</a>
+        <a href="#">Cart</a>
+        <a href="#">Become a Seller</a>
+      </div>
+    </div>
+    <div class="hero">
+      <h1>Welcome To Flipcart</h1>
+      <p>Flipcart is the best website where we doing shopping and we found veriety of items.</p>
+      <div class="search-box">
+        <input type="text" placeholder="Search items">
+        <button>🔍</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

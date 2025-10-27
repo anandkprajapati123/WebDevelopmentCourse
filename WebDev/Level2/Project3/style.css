@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy, sans-serif;
+  color: white;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  height: 85%;
+  background-color: #111;
+  display: flex;
+  padding: 5vw 10vw;
+}
+#left{
+  height: 100%;
+  width: 45%;
+  background-color: #333;
+}
+#right{
+  height: 100%;
+  width: 55%;
+  background-color: #444;
+  padding: 0 3vw;
+}

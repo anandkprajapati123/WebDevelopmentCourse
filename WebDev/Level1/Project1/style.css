@@ -32,6 +32,7 @@ html, body{
     font-weight: 400;
     padding: 5px 8px;
     border-radius: 50px;
+    cursor: pointer;
 }
 #nav h1{
     font-weight: 500;
@@ -44,11 +45,13 @@ html, body{
     border: 1.5px solid black;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 #btn2{
     background-color: orangered;
     color: white;
     border: none;
+    cursor: pointer;
 }
 #main>h1{
     font-size: 120px;
@@ -98,6 +101,13 @@ img{
     position: absolute;
     bottom: 3%;
     left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px black;
+    cursor: pointer;
 }
 #btm-left, #btm-right{
     color: black;

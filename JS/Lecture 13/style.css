@@ -50,7 +50,7 @@ form input{
     align-items: center;
     width: 6rem;
     border-radius: 0.5rem;
-    bottom: 1px solid lightgray;
+    border: 1px solid lightgray;
 }
 .select-container select{
     font-size: 1rem;

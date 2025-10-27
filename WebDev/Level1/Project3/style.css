@@ -99,7 +99,7 @@ html,body{
     font-weight: 600;
 }
 .bottom i:hover{
-    background-color: black;
+    background-color: rgba(110, 91, 91, 0.566);
     color: white;
     cursor: pointer;
 }

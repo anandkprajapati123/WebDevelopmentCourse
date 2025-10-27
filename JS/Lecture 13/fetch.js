@@ -1,6 +1,6 @@
 const URL="https://api.thecatapi.com/v1/images/search?limit=10";
 const para=document.querySelector("#para");
-constbtn=document.querySelector("#btn");
+const btn=document.querySelector("#btn");
 
 const getFacts=async ()=>{
     let response=await fetch(URL);

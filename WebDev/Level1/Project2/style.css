@@ -27,6 +27,7 @@ html, body{
     margin-left: 5px;
     border-radius: 50px;
     font-size: 23px;
+    cursor: pointer;
 }
 #intro{
     height: 45%;
@@ -53,6 +54,9 @@ html, body{
     width: 100%;
     background-image: url(https://assets-global.website-files.com/64589fb989b2b33c593db89d/6458a6db645ec6a527000cfa_home-hero-p-2000.webp);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 #about{
     height: 45%;
