@@ -1,0 +1,56 @@
+<html>
+<head>
+  <title>ABES Engg. College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="images/abes.png" alt="">
+      <h1>ABES Engineering College Ghaziabad</h1>
+    </div>
+    <div class="header-right">
+      <a href="#" onclick="loadContent('login')">Login</a>
+      <img src="images/profile.webp" alt="Profile" class="profile-logo" onclick="loadContent('profile')">
+    </div>
+  </header>
+
+  <!-- Marquee -->
+  <marquee><h1><i>Thought of the day: "Education is the key to success"</i></h1></marquee>
+
+  <!-- Navigation -->
+  <nav>
+    <img src="images/about.jpg" alt="About" onclick="loadContent('about')">
+    <img src="images/academics.jpg" alt="Academics" onclick="loadContent('academics')">
+    <img src="images/placement.jpg" alt="Placement" onclick="loadContent('placement')">
+    <img src="images/college.jpg" alt="Gallery" onclick="loadContent('college')">
+    <img src="images/enquiry.jpg" alt="Enquiry" onclick="loadContent('enquiry')">
+    <img src="images/register.jpg" alt="Register" onclick="loadContent('register')">
+  </nav>
+
+  <!-- Dynamic Content -->
+  <div id="content">
+    <h2>Welcome to ABES Engineering College</h2>
+    <p>
+      ABES Engineering College is a private institute in Ghaziabad, affiliated with AKTU and approved by AICTE. 
+      Known for its excellence in B.Tech, MCA, and MBA programs, the college emphasizes industry-ready skills, 
+      research, and innovation.
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ABES Engineering College, Ghaziabad | All Rights Reserved</p>
+    <div class="links">
+      <a href="#" onclick="loadContent('about')">About</a>
+      <a href="#" onclick="loadContent('academics')">Academics</a>
+      <a href="#" onclick="loadContent('placement')">Placement</a>
+      <a href="#" onclick="loadContent('college')">Gallery</a>
+      <a href="#" onclick="loadContent('enquiry')">Enquiry</a>
+      <a href="#" onclick="loadContent('register')">Register</a>
+    </div>
+    <p>Contact: info@abes.ac.in | Phone: +91-1234567890</p>
+  </footer>
+
+  <script src="script.js"></script>
+</html>
