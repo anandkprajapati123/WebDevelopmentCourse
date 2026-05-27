@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glass Image Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <span class="tag">// gallery</span>
+      <h1>Moments in Motion</h1>
+      <p>Auto-playing carousel with smooth transitions.</p>
+    </header>
+    <div class="slider-container">
+      <div class="img-container">
+        <img src="https://picsum.photos/id/1018/900/520" alt="" />
+        <img src="https://picsum.photos/id/1015/900/520" alt="" />
+        <img src="https://picsum.photos/id/1019/900/520" alt="" />
+        <img src="https://picsum.photos/id/1024/900/520" alt="" />
+        <img src="https://picsum.photos/id/1035/900/520" alt="" />
+        <img src="https://picsum.photos/id/1043/900/520" alt="" />
+        <img src="https://picsum.photos/id/1056/900/520" alt="" />
+      </div>
+      <button class="btn prev" aria-label="Previous">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="btn next" aria-label="Next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+      <div class="progress"><div class="progress-bar"></div></div>
+      <div class="dots"></div>
+    </div>
+    <footer class="meta">
+      <span><i class="fa-regular fa-image"></i> <span class="counter">1 / 7</span></span>
+      <span><i class="fa-solid fa-bolt"></i> auto-play 3s</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

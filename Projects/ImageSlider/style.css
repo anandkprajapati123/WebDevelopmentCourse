@@ -1,0 +1,102 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  color: #ECEAE3;
+  background:
+    radial-gradient(1000px 600px at 10% 0%, #2a1a4a 0%, transparent 60%),
+    radial-gradient(800px 500px at 90% 100%, #0d3b4f 0%, transparent 55%),
+    #0a0a12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.page { width: 100%; max-width: 920px; }
+.hero { text-align: center; margin-bottom: 28px; }
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFB454;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin: 0 0 8px;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff, #FFB454);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.hero p { margin: 0; opacity: 0.7; }
+.slider-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  background: #111;
+}
+.img-container { display: flex; height: 100%; transition: transform 0.6s cubic-bezier(0.65, 0, 0.35, 1); }
+.img-container img { width: 100%; height: 100%; object-fit: cover; flex-shrink: 0; }
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(20, 20, 30, 0.45);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 16px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn:hover { background: rgba(255, 180, 84, 0.85); transform: translateY(-50%) scale(1.08); color: #111; }
+.btn.prev { left: 14px; }
+.btn.next { right: 14px; }
+.progress {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+}
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: #FFB454;
+  transition: width 0.1s linear;
+}
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+.dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.dot.active { background: #FFB454; width: 22px; border-radius: 4px; }
+.meta {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  opacity: 0.7;
+}
